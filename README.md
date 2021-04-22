@@ -1,13 +1,11 @@
-# GoogleDrive integration
+# GoogleDrive file managment
 
 ## Overview
 
 The provided sample includes:
 
 - Connecting to the Google Drive API
-- Interacting with the following objects:
-  - Connected application info
-  - Files
+- Custom functions which sync your local files with your google drive.
 
 ---
 
