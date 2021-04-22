@@ -1,8 +1,8 @@
-# GoogleDrive file managment
+# GoogleDrive file management App
 
 ## Overview
 
-The provided sample includes:
+The provided sample application includes:
 
 - Connecting to the Google Drive API
 - Custom functions which sync your local files with your google drive.
