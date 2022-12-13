@@ -1,0 +1,86 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "ohSh",
+      "Properties": [
+        {
+          "Id": "Success",
+          "Name": "Success",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Index",
+          "Name": "Index",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Value",
+          "Name": "Value",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Groups",
+          "Name": "Groups",
+          "Type": "List:Generated:Y9Sb",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "Y9Sb",
+      "Properties": [
+        {
+          "Id": "Name",
+          "Name": "Name",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Index",
+          "Name": "Index",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Value",
+          "Name": "Value",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Captures",
+          "Name": "Captures",
+          "Type": "List:Generated:2mSs",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "2mSs",
+      "Properties": [
+        {
+          "Id": "Index",
+          "Name": "Index",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Value",
+          "Name": "Value",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

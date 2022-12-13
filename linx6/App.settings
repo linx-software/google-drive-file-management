@@ -1,0 +1,38 @@
+[
+  {
+    "Id": "18Sc",
+    "Name": "GoogleApiAuthCredentials",
+    "Type": "Compiled:String",
+    "Value": ""
+  },
+  {
+    "Id": "2G6h",
+    "Name": "UploadDirectory",
+    "Type": "Compiled:String",
+    "Value": "{WorkingDirectory}UploadFiles\\"
+  },
+  {
+    "Id": "jk1d",
+    "Name": "ShareWithUserEmail",
+    "Type": "Compiled:String",
+    "Value": ""
+  },
+  {
+    "Id": "xtpQ",
+    "Name": "DownloadDirectory",
+    "Type": "Compiled:String",
+    "Value": "{WorkingDirectory}DownloadedFiles\\"
+  },
+  {
+    "Id": "K4Jm",
+    "Name": "LinxRootDrive",
+    "Type": "Compiled:String",
+    "Value": "C:\\Linx\\"
+  },
+  {
+    "Id": "dxQk",
+    "Name": "WorkingDirectory",
+    "Type": "Compiled:String",
+    "Value": "{LinxRootDrive}GoogleDriveFiles\\"
+  }
+]

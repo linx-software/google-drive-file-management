@@ -1,0 +1,42 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "1XxZ",
+      "Properties": [
+        {
+          "Id": "LineNumber",
+          "Name": "LineNumber",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "LineContents",
+          "Name": "LineContents",
+          "Type": "Generated:67v3",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "67v3",
+      "Properties": [
+        {
+          "Id": "id",
+          "Name": "id",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "customID",
+          "Name": "customID",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

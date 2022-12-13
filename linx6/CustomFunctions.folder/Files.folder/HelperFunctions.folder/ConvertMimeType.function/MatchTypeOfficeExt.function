@@ -1,0 +1,25 @@
+{
+  "Properties": [
+    {
+      "Id": "List",
+      "Type": "List:Custom:LTia",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "MimeTypes.Where(x => x.file_ext == $.Parameters.mime_type).ToList()",
+        "CompiledExpression": "={1}.Where(x=>x.file_ext=={0}).ToList()",
+        "Type": "List:Custom:LTia"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "ExecutionPaths": [
+    {
+      "PluginId": "Loop",
+      "Name": "Loop",
+      "Result": "List:Custom:LTia",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore",
+      "ConstitutesControlFlow": true
+    }
+  ]
+}

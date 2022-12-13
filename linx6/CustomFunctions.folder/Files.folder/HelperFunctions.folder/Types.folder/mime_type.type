@@ -1,0 +1,21 @@
+{
+  "Id": "LTia",
+  "Name": "mime_type",
+  "Properties": [
+    {
+      "Id": "p4YQ",
+      "Name": "google",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "yhUz",
+      "Name": "office",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "BE4Y",
+      "Name": "file_ext",
+      "Type": "Compiled:String"
+    }
+  ]
+}

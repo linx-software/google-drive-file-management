@@ -1,0 +1,50 @@
+{
+  "Properties": [
+    {
+      "Id": "Folder path",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.LinxRootDrive",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Include subfolders",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    },
+    {
+      "Id": "Loop results",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    },
+    {
+      "Id": "Return full path",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    },
+    {
+      "Id": "Search pattern",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": "CustomIDsLink.txt"
+    }
+  ],
+  "ExecutionPaths": [
+    {
+      "PluginId": "File",
+      "Name": "File",
+      "Result": "Generated:DzlG",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore",
+      "ConstitutesControlFlow": true
+    }
+  ],
+  "Result": "Generated:cM4w"
+}

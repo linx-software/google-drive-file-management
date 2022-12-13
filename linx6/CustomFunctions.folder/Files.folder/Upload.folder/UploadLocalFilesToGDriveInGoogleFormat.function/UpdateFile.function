@@ -1,0 +1,164 @@
+{
+  "Properties": [
+    {
+      "Id": "Add parents",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Content type",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": ""
+    },
+    {
+      "Id": "File ID",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ForEachFileOnGoogleDrive.Loop.Id",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "File path",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "FileListLocalDriveForUpload.File.FileName",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Google API connection",
+      "Type": "Compiled:Twenty57.Linx.Plugins.GoogleDrive.Data.GoogleApiConnection, Twenty57.Linx.Plugins.GoogleDrive, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.GoogleApiAuthCredentials",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Remove parents",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update app properties",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update content hints",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update copy requires writer permission",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update description",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update folder color",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update keep revision forever",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update Mime type",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update modified time",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update name",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update OCR language",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update original file name",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update properties",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update starred",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update trashed",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update use content as indexable text",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update viewed by me time",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Update writers can share",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Upload URI",
+      "Type": "Compiled:Twenty57.Linx.Plugins.GoogleDrive.Data.UploadURI, Twenty57.Linx.Plugins.GoogleDrive, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Upload"
+    }
+  ],
+  "Result": "Compiled:Google.Apis.Drive.v3.Data.File, Google.Apis.Drive.v3, Version=1.57.0.2684, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab"
+}

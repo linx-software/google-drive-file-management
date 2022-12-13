@@ -1,0 +1,86 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "Cwwz",
+      "Properties": [
+        {
+          "Id": "Success",
+          "Name": "Success",
+          "Type": "Compiled:Boolean",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Index",
+          "Name": "Index",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Value",
+          "Name": "Value",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Groups",
+          "Name": "Groups",
+          "Type": "List:Generated:NMUL",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "NMUL",
+      "Properties": [
+        {
+          "Id": "Name",
+          "Name": "Name",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Index",
+          "Name": "Index",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Value",
+          "Name": "Value",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Captures",
+          "Name": "Captures",
+          "Type": "List:Generated:B0ye",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "B0ye",
+      "Properties": [
+        {
+          "Id": "Index",
+          "Name": "Index",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Value",
+          "Name": "Value",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "Id": "OzWN",
+  "Name": "ConvertMimeType_Result",
+  "Properties": [
+    {
+      "Id": "RFE3",
+      "Name": "mime_type",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "0DUa",
+      "Name": "file_ext",
+      "Type": "Compiled:String"
+    }
+  ]
+}
