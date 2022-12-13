@@ -1,0 +1,52 @@
+{
+  "Properties": [
+    {
+      "Id": "Contents",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "\"File: \" + TextFileReadItemIDFile.ForEachLine.LineContents.id + \" removed from Google Drive -\" + $.System.CurrentDateTime.ToString(\"yyyy-MM-dd HH:mm:ss.fffffff\") + $.System.NewLine",
+        "CompiledExpression": "=\"File: \"+{2}+\" removed from Google Drive -\"+{1}.ToString(\"yyyy-MM-dd HH:mm:ss.fffffff\")+{0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Destination encoding",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.Encoding, Twenty57.Linx.Plugins.File, Version=99.0.30.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Default"
+    },
+    {
+      "Id": "File does not exist",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.DoesNotExistOptions, Twenty57.Linx.Plugins.File, Version=99.0.30.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "CreateFile"
+    },
+    {
+      "Id": "File exists",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.ExistOptions, Twenty57.Linx.Plugins.File, Version=99.0.30.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "AppendData"
+    },
+    {
+      "Id": "File path",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.TextFileHandle, Twenty57.Linx.Plugins.File, Version=99.0.30.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.LinxRootDrive + \"Deleted/\" + \"Google_Drive_Deleted_log_\" + $.System.CurrentDateTime.ToString(\"yyyy_MM_dd\") + \".txt\"",
+        "CompiledExpression": "={1}+\"Deleted/\"+\"Google_Drive_Deleted_log_\"+{0}.ToString(\"yyyy_MM_dd\")+\".txt\"",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Owns file handle",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": true
+    }
+  ],
+  "Result": "Compiled:String",
+  "Version": "1"
+}

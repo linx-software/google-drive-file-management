@@ -1,0 +1,20 @@
+{
+  "ApplicationVersion": "6.5.39",
+  "SolutionVersion": 4,
+  "Plugins": [
+    "twenty57.linx.plugins.cryptography, 99.0.7-vnext",
+    "twenty57.linx.plugins.file, 99.0.30-vnext",
+    "twenty57.linx.plugins.googledrive, 99.0.5-vnext",
+    "twenty57.linx.plugins.googlesheets, 99.0.9-vnext",
+    "twenty57.linx.plugins.standard, 99.2.6-vnext",
+    "twenty57.linx.plugins.text, 99.0.9-vnext",
+    "twenty57.linx.plugins.utilities, 99.0.26-vnext"
+  ],
+  "Dependencies": [
+    "twenty57.linx.solutiondependencies.compilation, 99.0.61-vnext",
+    "twenty57.linx.solutiondependencies.types, 99.0.12-vnext"
+  ],
+  "Items": [
+    "CustomFunctions.folder"
+  ]
+}

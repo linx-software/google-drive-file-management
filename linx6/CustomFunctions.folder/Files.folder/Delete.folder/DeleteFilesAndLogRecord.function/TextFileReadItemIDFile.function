@@ -1,0 +1,66 @@
+{
+  "Properties": [
+    {
+      "Id": "Encoding",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.Common.FileReadWrite.Encoding, Twenty57.Linx.Plugins.File, Version=99.0.30.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Default"
+    },
+    {
+      "Id": "Fields",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.TextFileRead.TextFileReaderFields, Twenty57.Linx.Plugins.File, Version=99.0.30.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "SkipHeaderLines": 0,
+        "SkipFooterLines": 0,
+        "FileFormat": "CustomDelimited",
+        "TextQualifier": "None",
+        "OtherDelimiter": "|",
+        "FieldList": [
+          {
+            "Name": "id",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:String"
+          },
+          {
+            "Name": "customID",
+            "Skip": false,
+            "Format": "",
+            "Length": 0,
+            "TypeReference": "Compiled:String"
+          }
+        ]
+      }
+    },
+    {
+      "Id": "File path",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "FileListScanForItemIDFile.File.FileName",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Return options",
+      "Type": "Compiled:Twenty57.Linx.Plugins.File.TextFileRead.FileReadOptions, Twenty57.Linx.Plugins.File, Version=99.0.30.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "LineByLine"
+    }
+  ],
+  "ExecutionPaths": [
+    {
+      "PluginId": "ForEachLine",
+      "Name": "ForEachLine",
+      "Result": "Generated:giJ8",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore",
+      "ConstitutesControlFlow": true
+    }
+  ],
+  "Version": "1"
+}

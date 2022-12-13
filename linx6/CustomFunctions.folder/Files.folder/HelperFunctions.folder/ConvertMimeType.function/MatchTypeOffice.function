@@ -1,0 +1,25 @@
+{
+  "Properties": [
+    {
+      "Id": "List",
+      "Type": "List:Custom:lJ8u",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "MimeTypes.Where(x => x.office == $.Parameters.mime_type).ToList()",
+        "CompiledExpression": "={1}.Where(x=>x.office=={0}).ToList()",
+        "Type": "List:Custom:lJ8u"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ],
+  "ExecutionPaths": [
+    {
+      "PluginId": "Loop",
+      "Name": "Loop",
+      "Result": "List:Custom:lJ8u",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore",
+      "ConstitutesControlFlow": true
+    }
+  ]
+}

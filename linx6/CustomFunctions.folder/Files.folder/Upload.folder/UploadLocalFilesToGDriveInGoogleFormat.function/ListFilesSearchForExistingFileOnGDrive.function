@@ -1,0 +1,63 @@
+{
+  "Properties": [
+    {
+      "Id": "Corpora",
+      "Type": "Compiled:Twenty57.Linx.Plugins.GoogleDrive.Data.Corpora, Twenty57.Linx.Plugins.GoogleDrive, Version=99.0.5.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "User"
+    },
+    {
+      "Id": "Fields",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": ""
+    },
+    {
+      "Id": "Google API connection",
+      "Type": "Compiled:Twenty57.Linx.Plugins.GoogleDrive.Data.GoogleApiConnection, Twenty57.Linx.Plugins.GoogleDrive, Version=99.0.5.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.GoogleApiAuthCredentials",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Order by",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": ""
+    },
+    {
+      "Id": "Page size",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "RuntimeRead",
+      "Value": 1
+    },
+    {
+      "Id": "Page token",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": ""
+    },
+    {
+      "Id": "q",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "\"name = '\" + RegExExtractFileNameFromPath.Value +\"'\"",
+        "CompiledExpression": "=\"name = '\"+{0}+\"'\"",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Spaces",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": ""
+    }
+  ],
+  "Result": "Compiled:Google.Apis.Drive.v3.Data.FileList, Google.Apis.Drive.v3, Version=1.57.0.2746, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab"
+}
